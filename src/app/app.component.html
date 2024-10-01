@@ -1,0 +1,26 @@
+<section>
+  <app-user/>
+</section>
+
+<!-- Logging -->
+@if(isLogged){
+  <p> Welcome back, friend </p>
+}
+
+<!-- Server run -->
+@if(isServerRunning){
+  <p> Yes, the server is running </p>
+}
+@else {
+  <p> No, the server is not running </p>
+}
+
+
+<!-- For -->
+@for(os of operatingSystems; track os.id){
+  {{os.name}}
+}
+
+@for(user of users; track user.id){
+  <p> {{user.name}} </p>
+}
