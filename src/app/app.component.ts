@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserComponent } from './components/user-component/user-component.component';
+import { CookieRecipe } from './components/cookie-recipe/cookie-recipe.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    UserComponent
+    UserComponent,
+    CookieRecipe
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
