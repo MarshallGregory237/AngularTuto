@@ -17,9 +17,13 @@ import { CookieRecipe } from './components/cookie-recipe/cookie-recipe.component
 
 export class AppComponent {
 
-  isLogged = true;
+  isMain = false;
 
-  isServerRunning = true;
+  isLogged = false;
+
+  isServerRunning = false;
+
+  isCookieRecipe = false;
 
   operatingSystems = [
     {id: 'win', name:'windows'},
