@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserComponent } from './components/user-component/user-component.component';
 import { CookieRecipe } from './components/cookie-recipe/cookie-recipe.component';
+import { Props } from './components/props/props.component';
+import { GestionEvent } from './components/gestion-event/gestion-event.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +11,9 @@ import { CookieRecipe } from './components/cookie-recipe/cookie-recipe.component
   imports: [
     RouterOutlet,
     UserComponent,
-    CookieRecipe
+    CookieRecipe,
+    Props,
+    GestionEvent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -20,6 +24,10 @@ export class AppComponent {
   isMain = false;
 
   isLogged = false;
+
+  isProps = false;
+
+  isgestionEvent = false;
 
   isServerRunning = false;
 
